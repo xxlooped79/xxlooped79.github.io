@@ -1,0 +1,33 @@
+<section>
+    <h1>Personal Blog</h1>
+    <h2>Why I Find Learning Web Design Interesting</h2>
+
+    <p>
+        Web design is interesting to me because it blends creativity with logic.
+        You get to design how something looks <em>and</em> control how it works.
+        <br>
+        Every small change in HTML or CSS can completely change how a page feels.
+    </p>
+
+    <p>
+        One thing I enjoy most is seeing my work come to life in the browser.
+        It feels rewarding to write code and immediately see the result.
+        <strong>That instant feedback makes learning more fun.</strong>
+    </p>
+
+    <p>
+        Some things I enjoy about web development include:
+    </p>
+
+    <ul>
+        <li>Designing layouts</li>
+        <li>Learning new HTML tags</li>
+        <li>Improving my problem-solving skills</li>
+    </ul>
+
+    <p>
+        If I want help or inspiration, I often visit
+        <a href="https://developer.mozilla.org/" target="_blank">MDN Web Docs</a>
+        because it explains HTML clearly.
+    </p>
+</section>
