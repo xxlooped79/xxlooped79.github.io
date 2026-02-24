@@ -1,3 +1,8 @@
-   body {
-        background-color: #949ca6;
-    }
+body {
+    background-color: #949ca6;
+}
+
+em {
+    font-style: normal;
+    color: #6b0f1a;
+}
