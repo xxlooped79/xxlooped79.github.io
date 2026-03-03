@@ -3,21 +3,27 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Esteban Contact</title>
-
+  <title>Esteban Hernandez | Contact</title>
   <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-<nav>
-    <a href="index.html">Home</a> |
-    <a href="resume.html">Resume</a> |
-    <a href="contact.html">Contact</a> |
-    <a href="gallery.html">Gallery</a>
-  </nav>
+<header>
+  <h1>Contact Me</h1>
+  <p class="subtitle">I’d love to hear from you</p>
+</header>
 
-<h1>Contact Me</h1>
+<nav>
+  <a href="index.html">Home</a>
+  <a href="resume.html">Resume</a>
+  <a href="contact.html">Contact</a>
+  <a href="gallery.html">Gallery</a>
+</nav>
+
+<main class="container">
+
+<section class="card contact-card">
 
 <form action="https://formsubmit.co/ehernandez2@hcc-nd.edu" method="POST">
 
@@ -25,26 +31,32 @@
   <input type="hidden" name="_subject" value="New Contact Form Submission">
   <input type="hidden" name="_next" value="thankyou.html">
 
-  <p>
-    <label for="name">Name:</label><br>
+  <div class="form-group">
+    <label for="name">Name</label>
     <input type="text" id="name" name="name" required>
-  </p>
+  </div>
 
-  <p>
-    <label for="email">Email:</label><br>
+  <div class="form-group">
+    <label for="email">Email</label>
     <input type="email" id="email" name="email" required>
-  </p>
+  </div>
 
-  <p>
-    <label for="message">Message:</label><br>
+  <div class="form-group">
+    <label for="message">Message</label>
     <textarea id="message" name="message" rows="6" required></textarea>
-  </p>
+  </div>
 
-  <p>
-    <button type="submit">Send Message</button>
-  </p>
+  <button class="btn" type="submit">Send Message</button>
 
 </form>
+
+</section>
+
+</main>
+
+<footer>
+  <p>© 2026 Esteban Hernandez</p>
+</footer>
 
 </body>
 </html>
