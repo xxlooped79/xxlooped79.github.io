@@ -23,7 +23,7 @@ nav a {
 
 /* Box model rule */
 .card {
-    background: rgb(253, 0, 160);
+    background: rgb(64, 255, 0);
     padding: 20px;
     margin: 20px;
     border-radius: 8px;
