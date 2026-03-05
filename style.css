@@ -6,7 +6,7 @@ body {
 
 /* Class selector */
 .subtitle {
-    color: white;
+    color: rgb(0, 0, 0);
     font-size: 18px;
 }
 
@@ -23,7 +23,7 @@ nav a {
 
 /* Box model rule */
 .card {
-    background: white;
+    background: rgb(253, 0, 160);
     padding: 20px;
     margin: 20px;
     border-radius: 8px;
