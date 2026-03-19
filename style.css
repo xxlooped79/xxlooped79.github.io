@@ -1,5 +1,5 @@
 body {
-    background-color: #00ffa6;
+    background-color: #85c3b5;
     font-family: Arial, sans-serif;
     margin: 0;
 }
@@ -23,7 +23,7 @@ nav a {
 
 /* Box model rule */
 .card {
-    background: rgb(64, 255, 0);
+    background: rgb(255, 255, 255);
     padding: 20px;
     margin: 20px;
     border-radius: 8px;
