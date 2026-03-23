@@ -4,20 +4,26 @@
   <meta charset="UTF-8">
   <title>Esteban Hernandez | Resume</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  
+
   <link rel="icon" type="image/png" href="favicon.png">
   <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
+
 <nav>
-  <a href="index.html">Home</a>
-  <a href="resume.html">Resume</a>
-  <a href="contact.html">Contact</a>
-  <a href="gallery.html">Gallery</a>
-  <a href="sandbox.html">Sandbox</a>
+  <h2 class="logo">Esteban</h2>
+
+  <div class="nav-links">
+    <a href="index.html">Home</a>
+    <a href="resume.html" class="active">Resume</a>
+    <a href="contact.html">Contact</a>
+    <a href="gallery.html">Gallery</a>
+    <a href="sandbox.html">Sandbox</a>
+  </div>
 </nav>
-<header>
+
+<header class="hero">
   <h1>My Resume</h1>
   <p class="subtitle">Computer Science Major | Holy Cross College</p>
 </header>
@@ -25,52 +31,60 @@
 <main class="container">
 
 <section class="card">
-
-  <h2>Academic Information</h2>
+  <h2>Contact Information</h2>
 
   <p class="info">
+    <strong>Email:</strong> ehernandez2@hcc-nd.edu <br>
     <strong>School:</strong> Holy Cross College <br>
     <strong>Major:</strong> Computer Science <br>
-    <strong>Year:</strong> Sophomore (Class of 2028) <br>
-    <strong>Email:</strong> ehernandez2@hcc-nd.edu
+    <strong>Expected Graduation:</strong> 2028
   </p>
-
 </section>
 
 <section class="card">
+  <h2>Skills</h2>
+  <ul class="skills">
+    <li>HTML & CSS</li>
+    <li>JavaScript (Basic)</li>
+    <li>Problem Solving</li>
+    <li>Team Collaboration</li>
+    <li>Time Management</li>
+  </ul>
+</section>
 
+<section class="card">
   <h2>Experience & Accomplishments</h2>
 
   <table class="resume-table">
     <thead>
       <tr>
         <th>Year(s)</th>
-        <th>Experience</th>
-        <th>Description & Accomplishments</th>
+        <th>Role</th>
+        <th>Details</th>
       </tr>
     </thead>
 
     <tbody>
       <tr>
-        <td>2024 – 2028</td>
-        <td>College Student</td>
+        <td>2024 – Present</td>
+        <td>Computer Science Student</td>
         <td>
           <ul>
-            <li>Completed coursework in web design and development</li>
-            <li>Built foundational coding projects</li>
-            <li>Developed strong problem-solving and time management skills</li>
+            <li>Completed coursework in web design and programming</li>
+            <li>Built personal and academic coding projects</li>
+            <li>Strengthened debugging and logical thinking skills</li>
           </ul>
         </td>
       </tr>
 
       <tr>
         <td>2022 – 2024</td>
-        <td>Group Projects & Collaboration</td>
+        <td>Team Projects</td>
         <td>
           <ul>
-            <li>Worked on collaborative presentations and assignments</li>
-            <li>Communicated ideas clearly in written and verbal formats</li>
-            <li>Balanced multiple academic deadlines effectively</li>
+            <li>Collaborated on group assignments and presentations</li>
+            <li>Communicated ideas effectively in teams</li>
+            <li>Managed deadlines across multiple projects</li>
           </ul>
         </td>
       </tr>
@@ -81,20 +95,20 @@
         <td>
           <ul>
             <li>Participated in school and community programs</li>
-            <li>Demonstrated responsibility and leadership</li>
-            <li>Strengthened teamwork skills</li>
+            <li>Developed leadership and responsibility</li>
+            <li>Improved teamwork and communication skills</li>
           </ul>
         </td>
       </tr>
     </tbody>
   </table>
-
 </section>
 
 </main>
 
 <footer>
   <p>© 2026 Esteban Hernandez</p>
+  <p class="footer-sub">Future Software Developer</p>
 </footer>
 
 </body>
