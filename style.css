@@ -1,11 +1,12 @@
-/* Page base */
+/* ===== Page Base ===== */
 body {
     background-color: #85c3b5;
     font-family: Arial, sans-serif;
     margin: 0;
+    line-height: 1.6;
 }
 
-/* Navbar container */
+/* ===== Navbar ===== */
 nav {
     background-color: #ffffff;
     padding: 15px 40px;
@@ -15,7 +16,7 @@ nav {
     border-bottom: 1px solid #ccc;
 }
 
-/* Group links */
+/* Nav links container */
 .nav-links {
     display: flex;
     gap: 25px;
@@ -43,7 +44,7 @@ nav a::after {
     transition: width 0.3s ease;
 }
 
-/* Hover effect */
+/* Hover */
 nav a:hover {
     color: rgb(0, 255, 217);
 }
@@ -57,22 +58,63 @@ nav a.active {
     color: rgb(0, 255, 217);
 }
 
-/* Subtitle */
+/* ===== Subtitle ===== */
 .subtitle {
-    color: rgb(0, 0, 0);
+    color: #222;
     font-size: 18px;
+    margin-top: -10px;
 }
 
-/* Card styling */
+/* ===== Cards (Main Content Sections) ===== */
 .card {
-    background: rgb(255, 255, 255);
-    padding: 20px;
-    margin: 20px;
-    border-radius: 8px;
+    background: #ffffff;
+    padding: 25px;
+    margin: 30px auto;
+    border-radius: 10px;
+    max-width: 900px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
 }
 
-/* Text styling */
+/* ===== Text Styling ===== */
 em {
     font-style: normal;
     color: #ff00d4;
+    font-weight: bold;
+}
+
+/* ===== Headings ===== */
+h1, h2, h3 {
+    color: #222;
+}
+
+/* ===== Buttons (Optional but makes site nicer) ===== */
+button {
+    background-color: rgb(0, 255, 217);
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+button:hover {
+    background-color: #00cbb0;
+}
+
+/* ===== Responsive (Mobile Friendly) ===== */
+@media (max-width: 768px) {
+    nav {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .nav-links {
+        flex-direction: column;
+        gap: 10px;
+        margin-top: 10px;
+    }
+
+    .card {
+        margin: 20px;
+    }
 }
