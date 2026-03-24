@@ -4,15 +4,12 @@ let score = 0;
 console.log("Welcome, " + user + ", to the Fighting Irish Championship Simulation.");
 console.log("Your decisions will determine the outcome of the game.\n");
 
-// Intro choice
 let role = prompt("Do you start on OFFENSE or DEFENSE?").toLowerCase();
 
-// Function to show score cleanly
 function showScore() {
     console.log("Current Score Impact: " + score + "\n");
 }
 
-// OFFENSE PATH
 if (role === "offense") {
     console.log("\nDrive 1: You take the field as quarterback.");
 
@@ -50,7 +47,6 @@ if (role === "offense") {
     showScore();
 
 
-// DEFENSE PATH
 } else if (role === "defense") {
     console.log("\nDrive 1: You lead the defense.");
 
@@ -92,10 +88,8 @@ if (role === "offense") {
     score -= 3;
 }
 
-// FINAL EVALUATION
 console.log("\nFinal Score Impact: " + score);
 
-// Smarter, more “academic” grading-style ending
 if (score >= 10) {
     console.log("ENDING: ELITE PERFORMANCE 🏆 (A)");
 } else if (score >= 5) {
