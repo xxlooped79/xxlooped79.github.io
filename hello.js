@@ -103,3 +103,6 @@ if (score >= 10) {
 }
 
 console.log("\nCoach's Note: Decision-making under pressure defines champions.")
+console.log("Thanks for playing the Fighting Irish Championship Simulation, " + user + "!");
+console.log("Feel free to play again and try different strategies!");
+console.log("Go Irish! 🍀");
