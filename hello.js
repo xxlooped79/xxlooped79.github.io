@@ -3,6 +3,7 @@ let score = 0;
 
 console.log("Welcome, " + user + ", to the Fighting Irish Championship Simulation.");
 console.log("Your decisions will determine the outcome of the game.\n");
+console.log("The crowd is roaring. This is your moment.\n");
 
 let role = prompt("Do you start on OFFENSE or DEFENSE?").toLowerCase();
 
