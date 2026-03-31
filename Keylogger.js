@@ -1,6 +1,7 @@
 let keyCounts = {};
 
-window.addEventListener("keyup", function(event) {
+window.addEventListener("keyup", eventHandler);
+function eventHandler(event) {
     let key = event.key.toLowerCase();
 
     if (!keyCounts[key]) {
@@ -14,28 +15,23 @@ window.addEventListener("keyup", function(event) {
     for (let k in keyCounts) {
         console.log(k + ": " + keyCounts[k]);
     }
-    
-    if (key === "a" && keyCounts[key] === 5) {
-        document.body.style.setProperty("border", "10px solid purple");
+
+    if (key === " " && keyCounts[key] === 5) {
+        document.body.style.setProperty("background-color", "lightblue");
     }
 
-    if (key === "s" && keyCounts[key] === 4) {
-        document.body.style.setProperty("font-family", "cursive");
+    if (key === "e" && keyCounts[key] === 8) {
+        document.body.style.setProperty("color", "darkred");
     }
 
-    if (key === "d" && keyCounts[key] === 6) {
-        let cards = document.querySelectorAll(".card");
-        cards.forEach(card => {
-            card.style.setProperty("box-shadow", "10px 10px 20px gray");
-        });
+    if (key === "h" && keyCounts[key] === 3) {
+        let header = document.querySelector(".hero");
+        if (header) {
+            header.style.setProperty("background-color", "gold");
+        }
     }
 
-    if (key === "f" && keyCounts[key] === 3) {
-        document.body.style.setProperty("background-color", "black");
-        document.body.style.setProperty("color", "lime");
+    if (key === "r" && keyCounts[key] === 6) {
+        document.body.style.setProperty("font-size", "20px");
     }
-
-    if (key === "enter" && keyCounts[key] === 2) {
-        document.body.style.setProperty("text-align", "center");
-    }
-});
+}
