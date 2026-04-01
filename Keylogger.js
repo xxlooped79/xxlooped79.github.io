@@ -41,3 +41,9 @@ function eventHandler(event) {
         document.body.style.setProperty("font-size", "20px");
     }
 }
+console.log("Keylogger initialized. Press keys to see counts and trigger changes."); 
+console.log("Press spacebar 5 times to change background color.");
+console.log("Press 'c' 8 times to change text color.");
+console.log("Press 'e' 3 times to change header background.");
+console.log("Press 's' 6 times to increase font size.");    
+console.log("Open the console to see key counts and changes.");
