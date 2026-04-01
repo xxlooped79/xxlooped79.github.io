@@ -37,7 +37,7 @@ function eventHandler(event) {
     }
 
     // "s" pressed 6 times → increase font size
-    if (key === "S" && keyCounts[key] === 6) {
+    if (key === "s" && keyCounts[key] === 6) {
         document.body.style.setProperty("font-size", "20px");
     }
 }
