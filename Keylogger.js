@@ -1,21 +1,16 @@
-// Object to track key counts
 let keyCounts = {};
 
-// Event listener for key presses
 window.addEventListener("keyup", eventHandler);
 
 function eventHandler(event) {
     let key = event.key.toLowerCase();
 
-    // Add key to object if it doesn't exist
     if (!keyCounts[key]) {
         keyCounts[key] = 0;
     }
 
-    // Increment count
     keyCounts[key]++;
 
-    // Display all key counts using a for-loop
     console.clear();
     console.log("Key Counts:");
     for (let k in keyCounts) {
