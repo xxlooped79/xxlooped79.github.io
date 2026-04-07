@@ -2,22 +2,16 @@ document.addEventListener("DOMContentLoaded", function () {
 
     const sections = document.querySelectorAll(".collapsible");
 
-
     sections.forEach(section => {
-        
-        const button = section.querySelector(".toggle-btn");
+        const header = section.querySelector(".collapsible-header");
         const content = section.querySelector(".content");
+        const button = section.querySelector(".toggle-btn");
 
-        button.addEventListener("click", () => {
-            section.classList.toggle("active");
+        header.addEventListener("click", () => {
+            const isOpen = content.style.display === "block";
 
-            if (section.classList.contains("active")) {
-                content.style.display = "block";
-                button.textContent = "-";
-            } else {
-                content.style.display = "none";
-                button.textContent = "+";
-            }
+            content.style.display = isOpen ? "none" : "block";
+            button.textContent = isOpen ? "+" : "-";
         });
     });
 
