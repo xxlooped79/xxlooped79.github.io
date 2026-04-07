@@ -10,7 +10,7 @@ body {
 nav {
     background-color: #000000;
     padding: 20px 0;
-    text-align: center; /* 👈 centers everything */
+    text-align: center;
     border-bottom: 1px solid #0066ff;
 }
 
@@ -24,8 +24,8 @@ nav {
 /* Nav links container */
 .nav-links {
     display: flex;
-    justify-content: center; /* 👈 centers links */
-    gap: 40px; /* 👈 better spacing */
+    justify-content: center;
+    gap: 40px;
 }
 
 /* Nav links */
@@ -109,7 +109,40 @@ button:hover {
     background-color: #00cbb0;
 }
 
-/* Responsive */
+.collapsible {
+    background: #ffffffd0;
+    padding: 20px;
+    margin: 30px auto;
+    border-radius: 10px;
+    max-width: 900px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+/* Header (title + button) */
+.collapsible-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+}
+
+/* Toggle button */
+.toggle-btn {
+    font-size: 18px;
+    padding: 6px 12px;
+}
+
+/* Hidden content */
+.content {
+    display: none;
+    margin-top: 15px;
+}
+
+/* Images inside content */
+.content img {
+    max-width: 100%;
+    border-radius: 8px;
+}
 @media (max-width: 768px) {
     nav {
         text-align: center;
