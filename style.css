@@ -11,7 +11,7 @@ nav {
     background-color: #000000;
     padding: 20px 0;
     text-align: center;
-    border-bottom: 1px solid #0066ff;
+    border-bottom: 1px solid #ffffff;
 }
 
 /* Logo */
@@ -144,7 +144,7 @@ button:hover {
     border-radius: 8px;
 }
 
-/* 📩 CONTACT FORM (ADDED) */
+/* CONTACT FORM */
 .form-group input,
 .form-group textarea {
     width: 100%;
