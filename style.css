@@ -19,6 +19,7 @@ nav {
     margin: 0 0 10px 0;
     font-size: 22px;
     font-weight: bold;
+    color: white;
 }
 
 /* Nav links container */
@@ -26,12 +27,13 @@ nav {
     display: flex;
     justify-content: center;
     gap: 40px;
+    flex-wrap: wrap;
 }
 
 /* Nav links */
 nav a {
     text-decoration: none;
-    color: #333;
+    color: white; 
     font-size: 16px;
     font-weight: 500;
     position: relative;
@@ -79,20 +81,20 @@ nav a.active {
     margin: 30px auto;
     border-radius: 10px;
     max-width: 900px;
-    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 }
 
-/* Text Styling */
+/* Headings (GLOBAL CENTER) */
+h1, h2, h3 {
+    color: #303030;
+    text-align: center;
+}
+
+/* Highlight text */
 em {
     font-style: normal;
     color: #ff00d4;
     font-weight: bold;
-}
-
-/* Headings */
-h1, h2, h3 {
-    color: #303030;
-    text-align: center;
 }
 
 /* Buttons */
@@ -109,42 +111,54 @@ button:hover {
     background-color: #00cbb0;
 }
 
+/* Collapsible sections */
 .collapsible {
     background: #ffffffd0;
     padding: 20px;
     margin: 30px auto;
     border-radius: 10px;
     max-width: 900px;
-    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 }
 
-/* Header (title + button) */
 .collapsible-header {
     display: flex;
     justify-content: space-between;
     align-items: center;
     cursor: pointer;
+    gap: 15px;
 }
 
-/* Toggle button */
 .toggle-btn {
     font-size: 18px;
-    padding: 6px 12px;
+    width: 40px;          
+    height: 40px;         
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    line-height: 1;
 }
 
-/* Hidden content */
 .content {
     display: none;
     margin-top: 15px;
+    padding-top: 5px;
 }
 
-/* Images inside content */
 .content img {
     max-width: 100%;
+    height: auto;
     border-radius: 8px;
+    display: block;
 }
 
 /* CONTACT FORM */
+.form-group {
+    margin-bottom: 20px;
+}
+
 .form-group input,
 .form-group textarea {
     width: 100%;
@@ -157,10 +171,7 @@ button:hover {
 
 .form-group textarea {
     min-height: 160px;
-}
-
-.form-group {
-    margin-bottom: 20px;
+    resize: vertical;
 }
 
 .btn {
@@ -173,21 +184,87 @@ button:hover {
 .form-group textarea:focus {
     border-color: rgb(0, 255, 217);
     outline: none;
-    box-shadow: 0 0 5px rgba(0,255,217,0.5);
+    box-shadow: 0 0 5px rgba(0, 255, 217, 0.5);
+}
+
+/* ===== API PAGE (FINAL FIXED) ===== */
+.api-section {
+    background: #ffffffd0;
+    padding: 25px;
+    margin: 30px auto;
+    border-radius: 10px;
+    max-width: 900px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+
+    /* CENTER EVERYTHING */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+/* FORCE TITLE CENTER */
+.api-section h1 {
+    text-align: center;
+    width: 100%;
+    align-self: center;
+}
+
+/* INPUT */
+.api-section input {
+    display: block;
+    width: 60%;
+    max-width: 400px;
+    margin: 15px auto;
+    padding: 12px;
+    font-size: 16px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+
+/* INPUT FOCUS */
+.api-section input:focus {
+    border-color: rgb(0, 255, 217);
+    outline: none;
+    box-shadow: 0 0 5px rgba(0, 255, 217, 0.5);
+}
+
+/* BUTTON */
+.api-section button {
+    display: block;
+    margin: 10px auto 20px auto;
+}
+
+/* RESULT */
+#result {
+    margin-top: 20px;
+    text-align: center;
+}
+
+#result img {
+    max-width: 250px;
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    display: block;
+    margin: 15px auto;
 }
 
 /* Responsive */
 @media (max-width: 768px) {
-    nav {
-        text-align: center;
-    }
-
     .nav-links {
         flex-direction: column;
         gap: 15px;
     }
 
-    .card {
+    .card,
+    .collapsible,
+    .api-section {
         margin: 20px;
+    }
+
+    .api-section input {
+        width: 90%;
     }
 }

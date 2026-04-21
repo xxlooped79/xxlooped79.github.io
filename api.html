@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Disney API | Esteban Hernandez</title>
+  <link rel="icon" type="image/png" href="favicon.png">
+  <link rel="stylesheet" href="style.css">
+  <script src="api.js" defer></script>
+</head>
+<body>
+  <nav>
+    <div class="nav-links">
+      <a href="index.html">Home</a>
+      <a href="resume.html">Resume</a>
+      <a href="contact.html">Contact</a>
+      <a href="gallery.html">Gallery</a>
+      <a href="sandbox.html">Sandbox</a>
+      <a href="api.html" class="active">API</a>
+    </div>
+  </nav>
+
+  <main>
+    <section class="hero">
+      <h1>Disney Character Finder</h1>
+    </section>
+
+    <section class="api-section">
+      <label for="characterInput">Enter a Disney character:</label>
+      <input type="text" id="characterInput" placeholder="Example: Mickey Mouse">
+      <button id="searchBtn">Search</button>
+
+      <div id="result">
+        <p>Your Disney character info will appear here.</p>
+      </div>
+    </section>
+  </main>
+</body>
+</html>
